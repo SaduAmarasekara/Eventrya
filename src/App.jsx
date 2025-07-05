@@ -1,4 +1,11 @@
 import { useState } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import Movies from './pages/Movies'
+import MovieDetails from './pages/MovieDetails'
+import SeatLayout from './pages/SeatLayout'
+import MyBookings from './pages/MyBookings'
+import Favourite from './pages/Favourite'
 
 
 
@@ -7,9 +14,17 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-      <h1 className="text-3xl font-bold underline bg-green-500 text-white p-4">
-      Hello world!
-    </h1>
+     <>
+     <Navbar/>
+<Routes>
+  <Route path='/' element={<Home/>}/>
+  <Route path='/movies' element={<Movies/>}/>
+  <Route path='/movies/:id' element={<MovieDetails/>}/>
+  <Route path='/movies/:id/:date' element={<MovieDetails/>}/>
+  <Route path='/my-bookings' element={<MyBookings/>}/>
+  <Route path='/favourite' element={<Favourite/>}/>
+</Routes>
+     </>
   )
 }
 
