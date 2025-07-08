@@ -15,7 +15,7 @@ const navigate =useNavigate()
   return (
 <div className='fixed top-0 left-0 z-50 w-full flex items-center justify-between px-6 md:px-16 lg:px-36 py-5'>
   <Link to='/' className='max-md:flex-1'>
-    <img src={assets.logo1} alt="" className='w-36 h-auto'/>
+    <img src={assets.logo} alt="" className='w-36 h-auto'/>
   </Link>
 
   <div className={`fixed inset-0 z-40 flex flex-col items-center justify-center gap-8 px-8 py-3 bg-black/70 backdrop-blur transition-all duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:static md:translate-x-0 md:flex-row md:justify-between md:gap-8 md:bg-white/10 md:border border-gray-300/20 md:rounded-full`}>
