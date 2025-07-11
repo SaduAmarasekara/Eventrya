@@ -1,11 +1,15 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { StarIcon } from "lucide-react";
+import timeFormat from "../lib/timeFormat";
 
 const MovieCard = ({ movie }) => {
   const navigate = useNavigate();
+
+  if (!movie) return null; // ✅ Avoid rendering if no movie
+
   return (
-    <div className="flex flex-col justify-between p-3 bg-gray-800 rounded-2xl hover:-translate-y-1 transition duration-300 w-66">
+    <div className="flex flex-col justify-between p-3 bg-gray-800 rounded-2xl hover:-translate-y-1 transition duration-300 w-[16.5rem]">
       <img
         onClick={() => {
           navigate(`/movies/${movie._id}`);
@@ -13,16 +17,13 @@ const MovieCard = ({ movie }) => {
         }}
         src={movie.backdrop_path}
         alt=""
-        className="rounded-lg h-52 w-full object-over object-right-bottom cursor-pointer"
+        className="rounded-lg h-52 w-full object-cover object-[right_bottom] cursor-pointer"
       />
       <p className="font-semibold mt-2 truncate">{movie.title}</p>
       <p className="text-sm text-gray-400 mt-2">
-        {new Date(movie.release_date).getFullYear()}.
-        {movie.geners
-          ?.slice(0, 2)
-          .map((genre) => genre.name)
-          .join(" | ")}
-        .{movie.runtime}
+        {new Date(movie.release_date).getFullYear()}.{" "}
+        {movie.genres?.slice(0, 2).map((genre) => genre.name).join(" | ")}.{" "}
+        {timeFormat(movie.runtime)}
       </p>
       <div className="flex items-center justify-between mt-4 pb-3">
         <button
