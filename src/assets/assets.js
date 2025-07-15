@@ -17,7 +17,7 @@ export const assets = {
 export const dummyTrailers = [
   {
     image: "https://img.youtube.com/vi/WpW36ldAqnM/maxresdefault.jpg",
-    videoUrl: "https://www.youtube.com/watch?v=WpW36ldAqnM",
+    videoUrl: "/images/Tvideo.mp4",
   },
   {
     image: "https://img.youtube.com/vi/-sAOWhvheK8/maxresdefault.jpg",
@@ -130,8 +130,7 @@ export const dummyShowsData = [
       "A queen sends the powerful and feared sorceress Gray Alys to the ghostly wilderness of the Lost Lands in search of a magical power, where she and her guide, the drifter Boyce, must outwit and outfight both man and demon.",
     poster_path:
       "https://image.tmdb.org/t/p/original/dDlfjR7gllmr8HTeN6rfrYhTdwX.jpg",
-    backdrop_path:
-      "https://image.tmdb.org/t/p/original/op3qmNhvwEvyT7UFyPbIfQmKriB.jpg",
+    backdrop_path: "/images/padura.jpg",
     genres: [
       { id: 28, name: "Action" },
       { id: 14, name: "Fantasy" },
