@@ -6,7 +6,7 @@ import timeFormat from "../lib/timeFormat";
 const MovieCard = ({ movie }) => {
   const navigate = useNavigate();
 
-  if (!movie) return null; // ✅ Avoid rendering if no movie
+  if (!movie) return null; 
 
   return (
     <div className="flex flex-col justify-between p-3 bg-gray-800 rounded-2xl hover:-translate-y-1 transition duration-300 w-[16.5rem]">
