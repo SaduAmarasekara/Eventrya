@@ -128,8 +128,7 @@ export const dummyShowsData = [
     title: "Padura",
     overview:
       "A queen sends the powerful and feared sorceress Gray Alys to the ghostly wilderness of the Lost Lands in search of a magical power, where she and her guide, the drifter Boyce, must outwit and outfight both man and demon.",
-    poster_path:
-      "https://image.tmdb.org/t/p/original/dDlfjR7gllmr8HTeN6rfrYhTdwX.jpg",
+    poster_path: "/images/padura.jpg",
     backdrop_path: "/images/padura.jpg",
     genres: [
       { id: 28, name: "Action" },
