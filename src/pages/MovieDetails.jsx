@@ -4,7 +4,7 @@ import { dummyDateTimeData, dummyShowsData } from "../assets/assets";
 import { Heart, PlayCircleIcon, StarIcon } from "lucide-react";
 import timeFormat from "../lib/timeFormat";
 import BlurCircle from "../Components/BlurCircle";
-import DateSelect from "../Components/DateSelect";
+import DateSelect from "../Components/dateSelect";
 
 
 
@@ -96,6 +96,7 @@ const MovieDetails = () => {
       </div>
 
       <DateSelect dateTime={show.dateTime} id={id} />
+      <p>You </p>
     </div>
   ) : (
     <div className="text-center py-10">Loading...</div>
