@@ -6,6 +6,7 @@ import timeFormat from "../lib/timeFormat";
 import BlurCircle from "../Components/BlurCircle";
 import DateSelect from "../Components/dateSelect";
 import MovieCard from "../Components/MovieCard"
+import Loading from "../Components/Loading";
 
 
 
@@ -19,6 +20,7 @@ const MovieDetails = () => {
 
   const getShow = async () => {
     const show = dummyShowsData.find((show) => show._id === id);
+   
 
     if (show) {
       setShow({
@@ -113,7 +115,7 @@ const MovieDetails = () => {
       </div>
     </div>
   ) : (
-    <div >Loading...</div>
+   <Loading></Loading>
   );
 };
 
