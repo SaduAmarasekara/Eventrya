@@ -4,9 +4,11 @@ import { dummyDateTimeData, dummyShowsData } from "../assets/assets";
 import { Heart, PlayCircleIcon, StarIcon } from "lucide-react";
 import timeFormat from "../lib/timeFormat";
 import BlurCircle from "../Components/BlurCircle";
-import DateSelect from "../Components/dateSelect";
+import DateSelect from "../Components/DateSelect";
 import MovieCard from "../Components/MovieCard"
 import Loading from "../Components/Loading";
+
+
 
 
 
