@@ -19,3 +19,14 @@ body{
     scrollbar-width: none;
     
 }
+/* Hide number input spinner in WebKit browsers */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Invert color of calendar date picker icon (for dark mode, etc.) */
+input::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
