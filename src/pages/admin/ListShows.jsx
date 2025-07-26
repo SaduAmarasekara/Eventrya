@@ -40,26 +40,26 @@ const ListShows = () => {
         <table className="w-full border-collapse rounded-md overflow-hidden text-nowrap">
           <thead>
             <tr className="bg-primary/20 text-left text-white">
-              <th className="py-2 font-medium pl-5">Movie Name</th>
+              <th className="py-2 font-medium pl-5">Event Name</th>
               <th className="py-2 font-medium"> Time</th>
               <th className="py-2 font-medium">Total Bookings</th>
               <th className="py-2 font-medium">Earings</th>
             </tr>
           </thead>
-          <tbody className='text-sm font-light'>
+          <tbody className="text-sm font-light">
             {shows.map((show, index) => (
-              <tr key={index} className="border-b border-primary/10 bg-primary/5 even:bg-primary/10">
+              <tr
+                key={index}
+                className="border-b border-primary/10 bg-primary/5 even:bg-primary/10"
+              >
                 <td className="py-2 min-w-45 pl-5">{show.movie.title}</td>
-                <td className="py-2 ">
-                  {dateFormat(show.showDateTime)}
-                </td>
+                <td className="py-2 ">{dateFormat(show.showDateTime)}</td>
                 <td className="py-2">
-              
                   {Object.keys(show.occupiedSeats).length}
                 </td>
-                <td className="py-2" >{currency}
+                <td className="py-2">
+                  {currency}
                   {Object.keys(show.occupiedSeats).length * show.showPrice}
-                 
                 </td>
               </tr>
             ))}
