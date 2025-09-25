@@ -1,12 +1,37 @@
-# React + Vite
+# 🎟️ Eventrya – Real-Time University Event Booking System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Eventrya** is a real-time web-based ticket booking system designed to replace the manual event registration process currently used in universities.  
+The system improves **booking accuracy**, **seat management**, and **communication with students** by providing a modern, automated platform.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Problem Statement
+Universities often rely on manual processes for event registration, leading to:
+- Errors in seat allocation  
+- Overbooking or double-booking issues  
+- Inefficient communication with students about event details  
 
-## Expanding the ESLint configuration
+**Eventrya** solves these issues with a seamless **web-based ticket booking system**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Key Features
+- 🖥️ **Student Portal** – Browse upcoming events, sign up, and book tickets in real time  
+- 🪑 **Seat Selection** – Interactive seat map for accurate seat reservations  
+- 🤖 **Chatbot Support** – Get instant event information and FAQs  
+- 📩 **Email/SMS Notifications** – Automated reminders and confirmations  
+- 🔐 **Secure Login** – User authentication and role-based access  
+- 🛠️ **Admin Panel** – Manage events, bookings, and student records easily  
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend**: React + Vite + Tailwind CSS  
+- **Backend**: Node.js + Express  
+- **Database**: MongoDB  
+- **Authentication**: Clerk  
+- **Background Tasks**: Inngest  
+ 
+<img width="1919" height="1030" alt="image" src="https://github.com/user-attachments/assets/14b75281-cd8c-44a3-8da5-f78dcd0e028f" />
+<img width="1919" height="1005" alt="image" src="https://github.com/user-attachments/assets/13f0a08f-119d-4967-a407-135a55398bf9" />
+
